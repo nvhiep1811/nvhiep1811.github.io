@@ -58,10 +58,23 @@
   }
 
   /* Safeguard: Ensure selection is visible on inverted backgrounds (buttons, sections, tags) */
-  .bg-accent ::selection,
-  .bg-foreground ::selection {
+  .bg-accent::selection,
+  .bg-accent *::selection {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
+  }
+
+  .bg-foreground::selection,
+  .bg-foreground *::selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+
+  /* In dark mode, bg-foreground becomes a light background, so revert its selection to dark */
+  .dark .bg-foreground::selection,
+  .dark .bg-foreground *::selection {
+    background-color: rgba(45, 102, 82, 0.2) !important;
+    color: var(--accent) !important;
   }
 }
 

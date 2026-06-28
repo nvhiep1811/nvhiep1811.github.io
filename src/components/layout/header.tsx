@@ -62,16 +62,16 @@ export function Header() {
         "fixed top-0 w-full z-50 transition-all duration-300 border-b",
         scrolled
           ? "bg-background/80 backdrop-blur-md border-border py-4"
-          : "bg-transparent border-transparent py-6"
+          : "bg-transparent border-transparent py-4"
       )}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <a 
           href="#home" 
-          className="text-xl font-bold font-heading tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+          className="text-xl font-bold font-mono tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
           onClick={(e) => scrollToSection(e, "#home")}
         >
-          NVH
+          &lt;NVH/&gt;
         </a>
 
         {/* Desktop Nav */}
