@@ -20,7 +20,7 @@ export function Contact() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
               href={profile.socials.email.url}
-              className="w-full sm:w-auto px-8 py-4 bg-white text-accent font-bold rounded-lg hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-accent font-bold rounded-lg hover:bg-white/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white selection:bg-accent/20 selection:text-accent"
             >
               Send Email
             </a>
